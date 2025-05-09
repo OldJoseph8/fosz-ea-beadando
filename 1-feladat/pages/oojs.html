@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>OOJS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/oojs.css">
+</head>
+<body>
+    <header>
+        <h1>Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Kezdőlap</a>
+        <a href="tablazat.html">Táblázat</a>
+        <a href="html5.html">HTML5</a>
+        <a href="chartjs.html">ChartJS</a>
+        <a href="ajax.html">AJAX</a>
+        <a href="oojs.html"  class="active">OOJS</a>
+    </nav>
+
+    <aside>
+        <p>Válassz valamit</p>
+    </aside>
+
+    <div class="content">
+        <h2>OOJS - Objektumorientált JavaScript</h2>
+        <h2>Autó adatai</h2>
+        <form id="carForm">
+            <label for="brand">Márka:</label>
+            <input type="text" id="brand" required><br><br>
+
+            <label for="model">Típus:</label>
+            <input type="text" id="model" required><br><br>
+
+            <label for="color">Szín:</label>
+            <input type="text" id="color" required><br><br>
+
+            <label for="year">Évjárat:</label>
+            <input type="number" id="year" required><br><br>
+
+            <label for="carType">Autó típusa:</label>
+            <select id="carType" required>
+                <option value="traditional">Hagyományos</option>
+                <option value="electric">Elektromos</option>
+            </select><br><br>
+
+            <button type="submit">Autó létrehozása</button>
+        </form>
+
+        <h4>OOP eredmény:</h4>
+        <div class="car-info" id="carInfo"></div>
+    </div>
+
+    <footer>
+        Készítők: Kovács Erik (OKYA01)
+    </footer>
+</body>
+    <script src="../assets/js/oojs.js"></script>
+</html>

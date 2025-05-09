@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Kezdőlap</a>
+        <a href="tablazat.html">Táblázat</a>
+        <a href="html5.html">HTML5</a>
+        <a href="chartjs.html">ChartJS</a>
+        <a href="ajax.html"  class="active">AJAX</a>
+        <a href="oojs.html">OOJS</a>
+    </nav>
+
+    <aside>
+        <p>Válassz valamit</p>
+    </aside>
+
+<div class="content">
+    <h2>Adatkezelés AJAX-szal</h2>
+
+    <div id="message"></div>
+
+    <h3>Adatok listázása</h3>
+    <div id="dataList"></div>
+    <div id="stats"></div>
+
+    <h3>Új adat</h3>
+    <input type="text" id="createName" placeholder="Név">
+    <input type="text" id="createHeight" placeholder="Magasság (cm)">
+    <input type="text" id="createWeight" placeholder="Súly (kg)">
+    <button onclick="createData()">Hozzáadás</button>
+
+    <h3>Adat módosítása</h3>
+    <input type="text" id="updateId" placeholder="ID">
+    <button onclick="getDataForId()">Lekérés</button><br>
+    <input type="text" id="updateName" placeholder="Név">
+    <input type="text" id="updateHeight" placeholder="Magasság">
+    <input type="text" id="updateWeight" placeholder="Súly">
+    <button onclick="updateData()">Módosítás</button>
+
+    <h3>Adat törlése</h3>
+    <input type="text" id="deleteId" placeholder="ID">
+    <button onclick="deleteData()">Törlés</button>
+</div>
+
+    <footer>
+        Készítők: Kovács Erik (OKYA01)
+    </footer>
+</body>
+    <script src="../assets/js/ajax.js"></script>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/html5.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Kezdőlap</a>
+        <a href="tablazat.html">Táblázat</a>
+        <a href="html5.html"  class="active">HTML5</a>
+        <a href="chartjs.html">ChartJS</a>
+        <a href="ajax.html">AJAX</a>
+        <a href="oojs.html">OOJS</a>
+    </nav>
+
+   <aside>
+        <ul id="html5-ul">
+            <li><a href="#webStorage">Web Storage</a></li>
+            <li><a href="#webWorkers">Web Workers</a></li>
+            <li><a href="#serverSentEvents">Server-Sent Events</a></li>
+            <li><a href="#geolocation">Geolocation API</a></li>
+            <li><a href="#dragAndDrop">Drag and Drop API</a></li>
+            <li><a href="#canvas">Canvas</a></li>
+            <li><a href="#svg">SVG</a></li>
+        </ul>
+    </aside>
+
+    <div class="content">
+        <section id="webStorage">
+            <h2>Web Storage (LocalStorage)</h2>
+            <input type="text" id="username" placeholder="Add meg a neved">
+            <button onclick="saveData()">Mentés</button>
+            <button onclick="loadData()">Betöltés</button>
+            <button onclick="deleteData()">Törlés</button>
+            <p id="webStorageOutput"></p>
+        </section>
+        <hr>
+        <section id="webWorkers">
+            <h2>Web Workers</h2>
+            <p>Számolás Web Worker segítségével</p>
+            <button onclick="startWorker()">Számolás indítása</button>
+            <button onclick="stopWorker()">Leállítás</button>
+            <p id="workerOutput">Eredmény: </p>
+        </section>
+        <hr>
+            <section id="serverSentEvents">
+            <h2>Server-Sent Events</h2>
+            <button onclick="startSSE()">SSE indítása</button>
+            <button onclick="stopSSE()">SSE leállítása</button>
+            <p>SSE kimenet: <span id="sseOutput">nincs adat</span></p>
+            </section>
+        <hr>
+        <section id="geolocation">
+            <h2>Geolocation API</h2>
+            <button onclick="getLocation()">Helymeghatározás</button>
+            <div id="locationOutput"></div>
+        </section>
+        <hr>
+        <section id="dragAndDrop">
+            <h2>Drag and Drop API</h2>
+
+            <div id="drag-source" 
+                draggable="true" 
+                ondragstart="drag(event)">
+                Húzd
+            </div>
+
+            <div id="drop-target" 
+                ondragover="allowDrop(event)" 
+                ondrop="drop(event)">
+                Ide
+            </div>
+        </section>
+
+        <hr>
+        <section id="canvas">
+            <h2>Canvas</h2>
+            <button onclick="drawHouse()">Ház rajzolása</button>
+            <br>
+            <button onclick="clearCanvas()">Canvas törlése</button>
+            <canvas id="canva-feladat" width="500" height="200" style="border:1px solid #000000;"></canvas>
+        </section>
+        <hr>
+        <section id="svg">
+            <h2>SVG</h2>
+            <svg width="400" height="180">
+                <rect x="50" y="20" width="300" height="150" class="rectangle" />
+            </svg>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" class="circle" />
+            </svg>
+            <svg width="200" height="200">
+                <polygon points="50,150 100,50 150,150" class="triangle" />
+            </svg>
+        </section>
+        <hr>
+    </div>
+
+    <footer>
+        Készítők: Kovács Erik (OKYA01)
+    </footer>
+</body>
+</html>

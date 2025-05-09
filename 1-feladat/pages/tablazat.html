@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Táblázat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/tablazat.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Kezdőlap</a>
+        <a href="tablazat.html"  class="active">Táblázat</a>
+        <a href="html5.html">HTML5</a>
+        <a href="chartjs.html">ChartJS</a>
+        <a href="ajax.html">AJAX</a>
+        <a href="oojs.html">OOJS</a>
+    </nav>
+
+    <aside>
+        <p>CRUD táblázat</p>
+    </aside>
+
+    <div class="content">
+        <h2>CRUD Autós Táblázat</h2>
+        <form id="recordForm">
+            <input type="hidden" id="recordId">
+            <input type="text" id="carModel" placeholder="Autó modell" required>
+            <input type="number" id="year" placeholder="Évjárat" required min="1900" max="2100">
+            <input type="number" id="engineCapacity" placeholder="Motor (cm³)" required min="500" max="8000">
+            <input type="number" id="weight" placeholder="Súly (kg)" required min="500" max="5000">
+            <button type="submit">Mentés</button>
+        </form>
+
+        <label for="searchType">Keresés típusa:</label>
+        <select id="searchType">
+            <option value="model">Autó modell</option>
+            <option value="year">Évjárat</option>
+            <option value="engineCapacity">Motor (cm³)</option>
+            <option value="weight">Súly (kg)</option>
+        </select>
+
+        <input type="text" id="search" placeholder="Keresés érték alapján">
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">ID</th>
+                    <th onclick="sortTable(1)">Autó modell</th>
+                    <th onclick="sortTable(2)">Évjárat</th>
+                    <th onclick="sortTable(3)">Motor (cm³)</th>
+                    <th onclick="sortTable(4)">Súly (kg)</th>
+                    <th>Műveletek</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <footer>
+        Készítők: Kovács Erik (OKYA01)
+    </footer>
+</body>
+</html>

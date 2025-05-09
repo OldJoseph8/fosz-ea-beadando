@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, nav, aside, .content {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+header {
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    background: url("https://www.skyweaver.net/images/media/wallpapers/wallpaper1.jpg");
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+nav {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+}
+
+nav a.active {
+    background-color: #0077cc;
+    color: white;
+    border-radius: 4px;
+}
+
+aside {
+    background-color: #f9f9f9;
+}
+
+.content {
+    background-color: #fff;
+    min-height: 300px;
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+input, button {
+    padding: 5px;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+#html5-ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center; 
+    align-items: center; 
+}
+
+#html5-ul li {
+    margin-right: 20px;
+}
+
+#html5-ul li:last-child {
+    margin-right: 0; 
+}
+
+
+
+#drag-source {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+    cursor: grab;
+}
+#drop-target {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 200px;
+    border: 2px dashed #007BFF;
+}
+
+#drag-source img {
+    width: 100%;
+    height: 100%;
+}
+
+ #drop-target img {
+    width: 100%;
+    height: 100%;
+}
+
+#canvas {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+}
+.circle {
+    stroke: blue;
+    stroke-width: 4;
+    fill: green;
+}
+.rectangle {
+    stroke: #8B0000;
+    stroke-width: 3;
+    fill: #FF6347; 
+    rx: 20;
+    ry: 20;
+}
+.triangle {
+    fill: #4CAF50; 
+    stroke: #2E7D32; 
+    stroke-width: 3;
+}
+aside p
+{
+    text-align: center;
+}
+
+
